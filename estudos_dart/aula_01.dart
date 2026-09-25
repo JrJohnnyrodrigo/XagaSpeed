@@ -5,6 +5,7 @@
 class Entrega {
   String pedido;
   String endereco;
+  String? complemento;
   String status;
 
   Entrega(
@@ -36,6 +37,7 @@ void main() {
     "Pendente",
   );
   entrega1.alterarStatus("Em rota");
+  entrega1.complemento = "Apto 203";
 
   Entrega entrega2 = Entrega(
     "8888",
@@ -69,6 +71,7 @@ void main() {
   for (Entrega entrega in entregas) {
     print("Pedido: ${entrega.pedido}");
     print("Endereço: ${entrega.endereco}");
+    print("Complemento: ${entrega.complemento ?? "Sem complemento"}");
     print("Status: ${entrega.status}");
   }
 
