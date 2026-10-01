@@ -31,6 +31,7 @@ void main() {
   int entregasConcluidas = 3;
   bool diariaAtiva = true;
 
+
   Entrega entrega1 = Entrega(
     "7777",
     "Rua das Palmeiras, 327",
